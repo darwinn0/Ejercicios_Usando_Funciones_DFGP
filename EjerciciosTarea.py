@@ -89,49 +89,10 @@ class Tarea:
         self.num=int(input("Por favor ingrese un numero entero: "))
         for i in range(self.num):
             print("*", end="")
-        print()
+        print(" ")
 
 print(" ---------- EJERCICIOS DE CLASE ---------- ")
 
-# #ejercicio 1
-# Isv=0.15
-
-# cantidad= int(input("Por favor ingrese la cantidad: "))
-# if cantidad >= 10000:
-#     Descuento=0.25
-# else:
-#     Descuento=0
-# TotalCompra= cantidad - (cantidad * Descuento)
-# TotalCompra= TotalCompra + (TotalCompra * Isv)
-# print(f"El total de la compra es : {TotalCompra}")
-
-# #ejercicio 2
-# fNacimiento=int(input("Por favor ingrese la fecha de nacimiento: "))
-# anioActual = 2025
-
-# edad = anioActual - fNacimiento
-# print (f"La edad que usted tiene es {edad}")
-
-# if edad >=21:
-#     print(f"ya tiene {edad} años, ya eres mayor de edad.")
-# else:
-#     if edad >= 18:
-#         print("ya eres cuidadano")
-#     print(f"ya tienes {edad} anios, eres menor de edad.")
-
-# #ejercicio 3
-# tabla = int(input("Por favor ingrese la tabla a multiplicar: "))
-
-# for i in range(1,11):
-#     print(f"{tabla} X {i} = {tabla*i}")
-
-# #ejercicio 4
-# tabla=5
-# i=1
-# while i <= 10:
-#     print(f"{tabla} X {i} = {tabla*i}")
-#     i += 1
-    
 # #ejercicio 5
 # def suma(a,b):
 #     return a+b
@@ -176,9 +137,8 @@ print(" ---------- EJERCICIOS DE CLASE ---------- ")
 
 
 class EjerciciosClase:
-    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla, a, b):
-        self.a = a
-        self.b = b
+    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla,a,b):
+
         self.Isv = Isv
         self.cantidad = cantidad
         self.Descuento = Descuento
@@ -187,6 +147,8 @@ class EjerciciosClase:
         self.anioActual = anioActual
         self.edad = edad
         self.tabla = tabla
+        self.a = a
+        self.b = b
 
 
 #EJERCICIO CLASE 1
@@ -213,4 +175,63 @@ class EjerciciosClase:
             if self.edad >= 18:
                 print("ya eres cuidadano")
             print(f"ya tienes {self.edad} anios, eres menor de edad.")
+
+#Ejercicio 3
+    def OtraMultiplicar(self):
+        self.tabla = int(input("Por favor ingrese la tabla a multiplicar: "))
+        for i in range(1,11):
+            print(f"{self.tabla} X {i} = {self.tabla*i}")
+
+#Ejercicio 4
+    def TablaConWhile(self):
+        self.tabla=5
+        i=1
+        while i <= 10:
+            print(f"{self.tabla} X {i} = {self.tabla*i}")
+            i += 1
+
+#Ejercicio 5
+    def Operaciones(self):
+        def suma(a,b):
+            return a+b
+
+        def resta(a,b):
+            return a-b
+
+        def multiplicacion(a,b):
+            return a*b
+
+        def division(a,b):
+            return a/b
+
+        def potencia(a,b):
+            return a**b
+
+        print(f"La suma es: {suma(3,4)}")
+        print(f"La resta es {resta(5,4)}")
+        print(f"La multiplicacion es {multiplicacion(2,2)}")
+        print(f"La division es {division(10,2)}")
+        print(F"La potencia es {potencia(2,3)}")
+
+#Ejercicio 6
+    def DescuentoFuncion(self):
+        def descuento(cantidad):
+            if cantidad >= 10000:
+                Descuento=0.25
+            else:
+                Descuento=0
+            return Descuento
+            
+
+        Isv=0.15
+
+        cantidad= int(input("Por favor ingrese la cantidad: "))
+        if cantidad >= 10000:
+            descuento=0.25
+        else:
+            descuento=0
+        TotalCompra= cantidad - (cantidad * descuento)
+        TotalCompra= TotalCompra + (TotalCompra * Isv)
+        print(f"El total de la compra es : {TotalCompra}")
+
         

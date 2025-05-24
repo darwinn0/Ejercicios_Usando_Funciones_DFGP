@@ -66,3 +66,17 @@ print("Calcula la edad de una persona con la fecha de nacimiento.")
 respuesta2.Edad()
 print(" ")
 
+print("Ejercicio clase 3, Tabla de multiplicar con ciclo for.")
+respuesta2.OtraMultiplicar()
+print(" ")
+
+print("Ejercicio clase 4, Tabla de multiplicar con ciclo while.")
+respuesta2.TablaConWhile()
+print(" ")  
+
+print("Ejercicio clase 5, Operaciones Arimetricas basicas.")
+respuesta2.Operaciones()
+print(" ")
+
+print("Ejercicio clase 6, Descuento cuando la compra es mayor a 10000 pero con funcio.")
+respuesta2.DescuentoFuncion()
