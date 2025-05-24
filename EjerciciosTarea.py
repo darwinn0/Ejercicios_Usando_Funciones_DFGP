@@ -217,21 +217,21 @@ class EjerciciosClase:
     def DescuentoFuncion(self):
         def descuento(cantidad):
             if cantidad >= 10000:
-                Descuento=0.25
+                self.Descuento=0.25
             else:
-                Descuento=0
-            return Descuento
+                self.Descuento=0
+            return self.Descuento
             
 
-        Isv=0.15
+        self.Isv=0.15
 
-        cantidad= int(input("Por favor ingrese la cantidad: "))
-        if cantidad >= 10000:
-            descuento=0.25
+        self.cantidad= int(input("Por favor ingrese la cantidad: "))
+        if self.cantidad >= 10000:
+            self.descuento=0.25
         else:
-            descuento=0
-        TotalCompra= cantidad - (cantidad * descuento)
-        TotalCompra= TotalCompra + (TotalCompra * Isv)
-        print(f"El total de la compra es : {TotalCompra}")
+            self.descuento=0
+        self.TotalCompra= self.cantidad - (self.cantidad * self.descuento)
+        self.TotalCompra= self.TotalCompra + (self.TotalCompra * self.Isv)
+        print(f"El total de la compra es : {self.TotalCompra}")
 
         
