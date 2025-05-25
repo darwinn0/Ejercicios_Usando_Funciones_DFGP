@@ -6,7 +6,7 @@ os.system('cls' if os.name== 'nt' else 'clear')
 from EjerciciosTarea import Tarea
 from EjerciciosTarea import EjerciciosClase
 
-respuesta = Tarea(num=0, num1=0, num2=0, num3=0, suma=0, base=0, altura=0, area=0, tabla=0)
+respuesta = Tarea(num=0, num1=0, num2=0, num3=0, suma=0, base=0, altura=0, area=0, tabla=0, r=0, diametro=0, nombre=0)
 
 
 print("Ejercicio de la tarea 1")
@@ -53,7 +53,7 @@ print(" ")
 
 
 
-respuesta2 = EjerciciosClase( Isv=0, cantidad=0, Descuento=0, TotalCompra=0, fNacimiento=0, anioActual=0, edad=0, tabla=0, a=0, b=0)
+respuesta2 = EjerciciosClase( Isv=0, cantidad=0, Descuento=0, TotalCompra=0, fNacimiento=0, anioActual=0, edad=0, tabla=0, a=0, b=0, r=0, diametro=0, nombre=0)
 
 print("========== EJERCICIOS DE CLASE ==========")
 print(" ")
@@ -80,3 +80,16 @@ print(" ")
 
 print("Ejercicio clase 6, Descuento cuando la compra es mayor a 10000 pero con funcio.")
 respuesta2.DescuentoFuncion()
+print(" ")
+
+print("Ejercicio clase 7, Imprime numeros hasta el 11.")
+respuesta2.Whileclase()
+print(" ")
+
+print("Ejercicio clase 8, Ciclo for que imprime numeros hasta el 10 y hace la tabla del 2")
+respuesta2.ForClase()
+print(" ")
+
+print("Ejercicio clase 9, Va imprimir saludos y calcular un diametro y va hacer una suma. ")
+respuesta2.SaludoFuncion()
+print(" ")

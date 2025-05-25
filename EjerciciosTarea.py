@@ -3,7 +3,7 @@ import os
 os.system('cls' if os.name== 'nt' else 'clear')
 
 class Tarea:
-    def __init__ (self,num, num1, num2, num3, suma, base, altura, area, tabla):
+    def __init__ (self,num, num1, num2, num3, suma, base, altura, area, tabla, r, diametro, nombre):
         self.num1 = num1
         self.num2 = num2
         self.num3 = num3
@@ -13,6 +13,9 @@ class Tarea:
         self.altura = altura
         self.area = area
         self.tabla = tabla
+        self.r = r
+        self.diametro = diametro
+        self.nombre = nombre
 
 # Ejercicio 1, Hola Mundo
     def holaMundo(self):
@@ -93,51 +96,8 @@ class Tarea:
 
 print(" ---------- EJERCICIOS DE CLASE ---------- ")
 
-# #ejercicio 5
-# def suma(a,b):
-#     return a+b
-
-# def resta(a,b):
-#     return a-b
-
-# def multiplicacion(a,b):
-#     return a*b
-
-# def division(a,b):
-#     return a/b
-
-# def potencia(a,b):
-#     return a**b
-
-# print(f"La suma es: {suma(3,4)}")
-# print(f"La resta es {resta(5,4)}")
-# print(f"La multiplicacion es {multiplicacion(2,2)}")
-# print(f"La division es {division(10,2)}")
-# print(F"La potencia es {potencia(2,3)}")
-
-# #ejercicio 6
-# def descuento(cantidad):
-#     if cantidad >= 10000:
-#         Descuento=0.25
-#     else:
-#         Descuento=0
-#     return Descuento
-    
-
-# Isv=0.15
-
-# cantidad= int(input("Por favor ingrese la cantidad: "))
-# if cantidad >= 10000:
-#     descuento=0.25
-# else:
-#     descuento=0
-# TotalCompra= cantidad - (cantidad * descuento)
-# TotalCompra= TotalCompra + (TotalCompra * Isv)
-# print(f"El total de la compra es : {TotalCompra}")
-
-
 class EjerciciosClase:
-    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla,a,b):
+    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla, a, b, r, diametro, nombre):
 
         self.Isv = Isv
         self.cantidad = cantidad
@@ -149,6 +109,9 @@ class EjerciciosClase:
         self.tabla = tabla
         self.a = a
         self.b = b
+        self.r = r
+        self.diametro = diametro
+        self.nombre = nombre
 
 
 #EJERCICIO CLASE 1
@@ -233,5 +196,46 @@ class EjerciciosClase:
         self.TotalCompra= self.cantidad - (self.cantidad * self.descuento)
         self.TotalCompra= self.TotalCompra + (self.TotalCompra * self.Isv)
         print(f"El total de la compra es : {self.TotalCompra}")
+
+# Ejercicio 7
+    def Whileclase(self):
+        i = 0
+        while i <=10:
+            i +=1
+            print(i)
+
+
+# Ejercicio 8
+    def ForClase(self):
+        for i in range(11):
+            print(i)
+
+        for i in range(1,11):
+            print (f"2X{i}={2*i}")
+
+# Ejercicio 9
+    def SaludoFuncion (self):
+        def saludo (nombre):
+            print(f"Hola {nombre}!")
+
+        def _PI():
+            return 3.1416
+
+        def suma(a,b):
+            return a+b
+
+        #Invocamos la funcion.
+        saludo ("Darwin Guzman.")
+
+        #Calcular el diametro del circulo.
+        self.r=1
+        self.diametro=2*_PI()*self.r
+        print(f"Diametro: {self.diametro}")
+
+        #Funcions suma
+        print(f"Funcion suma: {suma(1,1)}")
+
+        
+
 
         
