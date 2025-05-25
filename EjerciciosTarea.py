@@ -22,7 +22,7 @@ class Tarea:
         print( "Hola Mundo" )
     
 # Ejercicio 2, Sumar dos numeros
-    def sumar_dos_numeros(self):
+    def sumarDosNumeros(self):
         self.num1 = int(input("Ingrese el primer numero: "))
         self.num2 = int(input("Ingrese el segundo numero: "))
         self.suma = self.num1 + self.num2
@@ -97,7 +97,7 @@ class Tarea:
 print(" ---------- EJERCICIOS DE CLASE ---------- ")
 
 class EjerciciosClase:
-    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla, a, b, r, diametro, nombre):
+    def __init__ (self, Isv, cantidad, Descuento, TotalCompra, fNacimiento, anioActual, edad, tabla, a, b, r, diametro, nombre, reciduo, potencia, rx, ry,x ,y):
 
         self.Isv = Isv
         self.cantidad = cantidad
@@ -112,6 +112,13 @@ class EjerciciosClase:
         self.r = r
         self.diametro = diametro
         self.nombre = nombre
+        self.reciduo = reciduo
+        self.potencia = potencia
+        self.rx = rx
+        self.ry = ry
+        self.x = x
+        self.y = y
+
 
 
 #EJERCICIO CLASE 1
@@ -235,7 +242,51 @@ class EjerciciosClase:
         #Funcions suma
         print(f"Funcion suma: {suma(1,1)}")
 
+# Ejercicio 10, Operacions arimetricas
+    def OperacionesArimetricasClase (self):
         
+        self.a=10
+        self.b=5
 
+        #suma 
+        self.suma=self.a+self.b
+        print("Suma = ", self.suma)
 
+        #resta
+        self.resta = self.a-self.b
+        print("Resta = ", self.resta)
+
+        #Multiplicacion
+        self.multiplicaion= self.a*self.b
+        print("Multiplicacion = ", self.multiplicaion)
+
+        #Divicion
+        self.divicion = self.a / self.b
+        print("Divicion = ", self.divicion)
+
+        # Ingreso de valores a variables
+        self.x=int(input("x: "))
+        self.y=int(input("y: "))
+
+        #Potencia
+        self.potencia=self.x**self.y
+        print(f"{self.x}^{self.y}= ", self.potencia)
+
+        #suma 
+        self.suma = self.x+self.y
+        print(f"{self.x}+{self.y}= ", self.suma)
+
+        #operador de residuo
+        self.reciduo=self.x%self.y
+        print(f"{self.x}+{self.y}= ", self.reciduo)
+
+        #raiz cuadrada
+        self.rx=self.x**(1/2)
+        self.ry=self.y**(1/2)
+        print("La raiz cuadrada de x es: ", self.rx)
+        print("La raiz cuadrada de y es: ", self.ry)
+        
+# Ejercicio 11, Hola mundo clae
+    def ClaseHolaMundo(self):
+        print("Hola Mundo, Ejercicio de clase.")
         

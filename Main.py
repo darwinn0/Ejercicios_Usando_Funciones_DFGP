@@ -14,7 +14,7 @@ respuesta.holaMundo()
 print(" ")
 
 print("Ejercicio de la tarea 2, Suma de dos numeros")
-respuesta.sumar_dos_numeros()
+respuesta.sumarDosNumeros()
 print(" ")
 
 print("Ejercicio de la tarea 3, caldular area de un rectangulo.")
@@ -53,7 +53,7 @@ print(" ")
 
 
 
-respuesta2 = EjerciciosClase( Isv=0, cantidad=0, Descuento=0, TotalCompra=0, fNacimiento=0, anioActual=0, edad=0, tabla=0, a=0, b=0, r=0, diametro=0, nombre=0)
+respuesta2 = EjerciciosClase( Isv=0, cantidad=0, Descuento=0, TotalCompra=0, fNacimiento=0, anioActual=0, edad=0, tabla=0, a=0, b=0, r=0, diametro=0, nombre=0, reciduo=0, potencia=0, rx=0, ry=0,x=0 ,y=0)
 
 print("========== EJERCICIOS DE CLASE ==========")
 print(" ")
@@ -93,3 +93,10 @@ print(" ")
 print("Ejercicio clase 9, Va imprimir saludos y calcular un diametro y va hacer una suma. ")
 respuesta2.SaludoFuncion()
 print(" ")
+
+print("Ejercicio clase 10, Va imprimir las operaciones basicas hechas en clase. ")
+respuesta2.OperacionesArimetricasClase()
+print(" ")
+
+print("Ejercicio clase 11, Va imprimir Hola Mundo Ejercicio clase.")
+respuesta2.ClaseHolaMundo()
